@@ -14,8 +14,11 @@
 
 body {
   padding: 50px 100px;
+  min-height: 100vh;
 }
+
 header {
+  min-height: 10vh;
   display: flex;
   gap: 120px;
 }
@@ -96,4 +99,87 @@ a {
 }
 .hero-brands > ul > li > a > img {
   max-height: 35px;
+}
+.main {
+}
+.services {
+  border: 2px solid purple;
+  height: 1000px;
+}
+
+.services-cards {
+  border: 2px solid red;
+  max-height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+article {
+  border: 1px solid var(--primary-color);
+  border-radius: 45px;
+  box-shadow: 0px 3px var(--primary-color);
+  max-width: 40%;
+  height: 20%;
+  border: 2px blue solid;
+}
+
+.card-one,
+.card-four {
+  border: orangered 2px solid;
+  background-color: var(--tertiary-color);
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  /* max-width: 40%;
+  max-height: 30%; */
+}
+
+.card-two,
+.card-five {
+  border: orangered 2px solid;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  max-width: 40%;
+  height: 30%;
+}
+
+.card-three,
+.card-six {
+  border: orangered 2px solid;
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  max-width: 40%;
+  height: 30%;
+}
+
+.card-info,
+.card-img {
+  border: red 2px solid;
+  max-width: 45%;
+  max-height: auto;
+}
+
+.card-img > img {
+  border: blue 2px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.card-info h3 {
+  font-size: 25px;
+}
+.card-icon {
+  max-width: 20px;
+}
+
+footer {
+  min-height: 10vh;
 }
