@@ -216,24 +216,27 @@ span {
   flex-direction: column;
   gap: 25px;
   justify-content: space-between;
-}
-
-.card-img > img {
-  width: 99%;
-  height: 99%;
+  padding: 10px 15px;
 }
 
 .card-info h3 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .card-info a {
-  font-size: 14px;
+  font-size: 12px;
 }
 .card-icon {
   max-width: 20px;
   vertical-align: middle;
   padding-right: 10px;
+}
+.card-img {
+  padding: 10px 15px;
+}
+.card-img > img {
+  width: 99%;
+  height: 99%;
 }
 
 footer {
