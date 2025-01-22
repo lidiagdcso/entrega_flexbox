@@ -13,7 +13,7 @@
 }
 
 body {
-  padding: 50px 100px;
+  padding: 30px 100px 0px 100px;
   min-height: 100vh;
 }
 
@@ -35,6 +35,7 @@ header {
   flex-grow: 1;
   height: 100%;
 }
+
 .navbar > ul {
   height: 100%;
   display: flex;
@@ -42,14 +43,22 @@ header {
   align-items: center;
   list-style: none;
 }
+
 a {
   color: var(--primary-color);
   text-decoration: none;
 }
+
 .navbar > ul > li:last-child {
   border: 1px solid var(--primary-color);
   border-radius: 8px;
   padding: 10px;
+}
+
+.navbar > ul > li:last-child:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: var(--secondary-color);
 }
 
 #hero {
@@ -78,6 +87,11 @@ a {
   color: var(--quaternary-color);
   padding: 15px 20px;
   border-radius: 10px;
+}
+
+.hero-info button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .hero-img img {
@@ -229,7 +243,7 @@ footer {
   background-color: var(--primary-color);
   color: var(--quaternary-color);
   align-content: center;
-  font-size: 14px;
+  font-size: 10px;
 }
 footer ul {
   display: flex;
