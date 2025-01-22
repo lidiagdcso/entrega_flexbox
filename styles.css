@@ -100,12 +100,6 @@ a {
 .hero-brands > ul > li > a > img {
   max-height: 35px;
 }
-.main {
-}
-.services {
-  border: 2px solid purple;
-  height: 1000px;
-}
 
 .services-intro {
   margin: 50px 0px;
@@ -128,7 +122,6 @@ a {
 }
 
 .services-cards {
-  border: 2px solid red;
   max-height: max-content;
   display: flex;
   flex-wrap: wrap;
@@ -144,12 +137,13 @@ article {
   box-shadow: 0px 3px var(--primary-color);
   max-width: 40%;
   height: 20%;
-  border: 2px blue solid;
 }
 
+span {
+  border-radius: 10px;
+}
 .card-one,
 .card-four {
-  border: orangered 2px solid;
   background-color: var(--tertiary-color);
   padding: 20px;
   display: flex;
@@ -158,9 +152,13 @@ article {
   max-height: 30%; */
 }
 
+.card-one > .card-info > h3 > span,
+.card-four > .card-info > h3 > span {
+  background-color: var(--secondary-color);
+}
+
 .card-two,
 .card-five {
-  border: orangered 2px solid;
   background-color: var(--secondary-color);
   padding: 20px;
   display: flex;
@@ -169,9 +167,12 @@ article {
   height: 30%;
 }
 
+.card-two > .card-info > h3 > span,
+.card-five > .card-info > h3 > span {
+  background-color: var(--quaternary-color);
+}
 .card-three,
 .card-six {
-  border: orangered 2px solid;
   background-color: var(--primary-color);
   padding: 20px;
   display: flex;
@@ -180,24 +181,45 @@ article {
   height: 30%;
 }
 
+.card-three > .card-info > h3 > span,
+.card-six > .card-info > h3 > span {
+  background-color: var(--quaternary-color);
+}
+
+.card-three > .card-info > a,
+.card-six > .card-info > a {
+  color: var(--quaternary-color);
+}
+
 .card-info,
 .card-img {
-  border: red 2px solid;
-  max-width: 45%;
-  max-height: auto;
+  max-width: 210px;
+  max-height: 180px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
 }
 
 .card-img > img {
-  border: blue 2px solid;
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
 }
 
 .card-info h3 {
   font-size: 25px;
 }
+
+.card-info a {
+  font-size: 14px;
+}
 .card-icon {
   max-width: 20px;
+  vertical-align: middle;
+  padding-right: 10px;
 }
 
 footer {
