@@ -67,11 +67,13 @@ a {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around;
+  border: 2px red solid;
 }
 
 .hero-info {
   flex-basis: 40%;
   align-content: center;
+  border: 2px blue solid;
 }
 
 .hero-info h1 {
@@ -96,6 +98,7 @@ a {
 
 .hero-img img {
   width: 100%;
+  border: 2px green solid;
 }
 
 .hero-brands {
@@ -267,4 +270,30 @@ footer ul {
 footer ul > li > a {
   color: var(--quaternary-color);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1254px) {
+  #hero {
+    gap: 69px;
+  }
+  .hero-info > h1 {
+    font-size: 32px;
+    padding: 0px 35px 35px 0px;
+  }
+  .hero-info > p {
+    font-size: 14px;
+    padding: 0px 35px 35px 0px;
+  }
+  .hero-info button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .hero-img {
+    flex-basis: 50%;
+    min-width: 336px;
+  }
+}
+
+@media screen and (max-width: 640px) {
 }
