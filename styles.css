@@ -233,10 +233,13 @@ span {
 }
 .card-img {
   padding: 10px 15px;
+  border: 2px blue solid;
 }
 .card-img > img {
-  width: 99%;
-  height: 99%;
+  width: 100%;
+  max-width: 190px;
+  max-height: 190px;
+  filter: grayscale();
 }
 
 footer {
