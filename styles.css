@@ -62,26 +62,28 @@ a {
 }
 
 #hero {
-  margin: 50px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
+  margin: 40px 0px;
   border: 2px red solid;
 }
 
+.hero-container-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8%;
+  justify-content: space-between;
+}
 .hero-info {
-  flex-basis: 40%;
+  flex-basis: 45%;
   align-content: center;
   border: 2px blue solid;
 }
 
 .hero-info h1 {
-  font-size: 50px;
-  padding: 0px 40px 40px 0px;
+  font-size: 46px;
+  padding-bottom: 28px;
 }
 .hero-info p {
-  padding: 0px 40px 40px 0px;
+  padding-bottom: 28px;
 }
 
 .hero-info button {
@@ -96,13 +98,14 @@ a {
   transform: scale(1.1);
 }
 
+.hero-img {
+  flex-basis: 45%;
+  text-align: right;
+}
 .hero-img img {
   width: 100%;
   border: 2px green solid;
-}
-
-.hero-brands {
-  width: 95%;
+  max-width: 500px;
 }
 
 .hero-brands > ul {
