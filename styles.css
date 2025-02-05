@@ -20,8 +20,9 @@ body {
 header {
   min-height: 10vh;
   display: flex;
-  gap: 120px;
+  gap: 20px;
   align-items: center;
+  justify-content: space-between;
 }
 .logo {
   display: flex;
@@ -32,7 +33,7 @@ header {
   min-width: 100px;
 }
 .navbar {
-  flex-grow: 1;
+  flex-grow: 3;
   height: 100%;
 }
 
@@ -61,9 +62,12 @@ a {
   background-color: var(--secondary-color);
 }
 
+.menu {
+  display: none;
+}
+
 #hero {
   margin: 40px 0px;
-  border: 2px red solid;
 }
 
 .hero-container-principal {
@@ -75,7 +79,6 @@ a {
 .hero-info {
   flex-basis: 45%;
   align-content: center;
-  border: 2px blue solid;
 }
 
 .hero-info h1 {
@@ -104,7 +107,6 @@ a {
 }
 .hero-img img {
   width: 100%;
-  border: 2px green solid;
   max-width: 500px;
 }
 
@@ -274,28 +276,41 @@ footer ul > li > a {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1254px) {
-  #hero {
-    gap: 69px;
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  header {
+    gap: 50px;
   }
-  .hero-info > h1 {
-    font-size: 32px;
-    padding: 0px 35px 35px 0px;
+  .logo {
+    flex-grow: 2;
   }
-  .hero-info > p {
-    font-size: 14px;
-    padding: 0px 35px 35px 0px;
+  .navbar {
+    display: none;
   }
-  .hero-info button {
-    padding: 10px 15px;
-    font-size: 14px;
+
+  .menu {
+    display: block;
+    flex-grow: 1;
+    text-align: right;
+  }
+  .menu img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hero-container-principal {
+    display: block;
   }
 
   .hero-img {
-    flex-basis: 50%;
-    min-width: 336px;
+    text-align: center;
+    padding: 20px 0px;
   }
-}
+  .hero-img img {
+    width: 100%;
+    max-width: 250px;
+  }
 
-@media screen and (max-width: 640px) {
+  .services-intro p {
+    max-width: 100%;
+  }
 }
