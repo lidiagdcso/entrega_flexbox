@@ -13,7 +13,8 @@
 }
 
 body {
-  padding: 30px 100px 0px 100px;
+  padding: 50px;
+  padding-bottom: 0px;
   min-height: 100vh;
 }
 
@@ -147,20 +148,20 @@ a {
   max-height: max-content;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  padding: 15px 0px;
 }
 
 article {
+  flex-basis: calc(45% - 20px);
   border: 1px solid var(--primary-color);
   border-radius: 45px;
   box-shadow: 0px 3px var(--primary-color);
-  flex: 1 1 calc(40% - 20px);
-  max-width: calc(40% - 20px);
-  min-width: 100px;
   height: calc(34% - 10px);
+  padding: 20px 30px;
+  display: flex;
+  gap: 10%;
 }
 
 span {
@@ -169,12 +170,6 @@ span {
 .card-one,
 .card-four {
   background-color: var(--tertiary-color);
-  padding: 20px;
-  display: flex;
-  gap: 30px;
-  flex: 1 1 calc(40% - 20px);
-  max-width: calc(40% - 20px);
-  min-width: 100px;
 }
 
 .card-one > .card-info > h3 > span,
@@ -185,12 +180,6 @@ span {
 .card-two,
 .card-five {
   background-color: var(--secondary-color);
-  padding: 20px;
-  display: flex;
-  gap: 30px;
-  flex: 1 1 calc(40% - 20px);
-  max-width: calc(40% - 20px);
-  min-width: 100px;
 }
 
 .card-two > .card-info > h3 > span,
@@ -200,12 +189,6 @@ span {
 .card-three,
 .card-six {
   background-color: var(--primary-color);
-  padding: 20px;
-  display: flex;
-  gap: 30px;
-  flex: 1 1 calc(40% - 20px);
-  max-width: calc(40% - 20px);
-  min-width: 100px;
 }
 
 .card-three > .card-info > h3 > span,
@@ -219,14 +202,10 @@ span {
 }
 
 .card-info {
+  flex-basis: 40%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
   justify-content: space-between;
-  padding: 10px 15px;
-  flex: 1 1 calc(40% - 20px);
-  max-width: calc(40% - 20px);
-  min-width: 100px;
 }
 
 .card-info h3 {
@@ -242,13 +221,11 @@ span {
   padding-right: 10px;
 }
 .card-img {
-  padding: 10px 15px;
-  flex: 1 1 calc(40% - 20px);
-  max-width: calc(40% - 20px);
-  min-width: 100px;
+  flex-basis: 25%;
 }
+
 .card-img > img {
-  width: 100%;
+  width: 80%;
   min-width: 100px;
   max-height: 190px;
   filter: grayscale(100%);
@@ -276,7 +253,7 @@ footer ul > li > a {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   header {
     gap: 50px;
   }
